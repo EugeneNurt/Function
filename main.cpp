@@ -21,7 +21,7 @@ struct TGA{
 
 constexpr uint16_t IMG_WIDTH = 1920;
 constexpr uint16_t IMG_HEIGHT = 1080;
-constexpr uint32_t COL_BACKGROUND = 0xff101010;
+constexpr uint32_t COL_BACKGROUND = 0xff000000;
 constexpr uint32_t COL_FOREGROUND = 0xff000090;
 
 double sinc(double x){
@@ -34,9 +34,9 @@ double my_evil_function(double x,double y){
 }
 
 const double PI = acos(-1.0);
-constexpr double rx = 40., ry = 40., rz = 500.;
-constexpr double xMax = 40., xMin = -40.;
-constexpr double yMax = 40., yMin = -40.;
+constexpr double rx = 60., ry = 60., rz = 400.;
+constexpr double xMax = 30., xMin = -30.;
+constexpr double yMax = 30., yMin = -30.;
 constexpr double stepOne = 0.3, stepTwo = 0.01;
 
 void floatingHorizon(std::vector<uint32_t>& pixels, int x, int y, uint32_t c, std::vector<int>& h){
